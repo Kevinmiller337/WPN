@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WPN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/globe.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body onload="myTimeStamp()">
+    <section>
+        <nav class="top-nav colored">
+            <img class="nav-brand" src="images/wpn.png" alt="brand">
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="careers.html">Careers</a></li>
+                <li><a href="archives.html">Archives</a></li>
+                <li><a href="subscribe.html">Subcription</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <header class="top-container colored">
+            <img class="head-img" src="images/travel.png" alt="airplane-img">
+            <h1 class="first">World Post News</h1>
+        </header>
+
+    </section>
+
+    <section>
+        <div>
+            <img src="images/room.jpg" alt="board-room" width="100%">
+        </div>
+
+        <div class="career-div">
+            <h2>Careers</h2>
+            <p class="c-txt">Are you interested in a fast pace career? Do you have a knack for creative writing? Have you ever thought about becoming a journalist?</p>
+            <p class="c-txt">WPN is looking for passionate individuals looking skilled in the are of journalism. To apply please sign the form:</p>
+        </div>
+
+        <div class="career-div2">
+            <center>
+                <h5>Application</h5>
+                <form class="form4" action="handle_form.php" id="myForm4" name="myForm4" onsubmit="return validateForm2()"
+                    method="post" form>
+            
+                    <input type='text' name='fname' class="inputs" id='fname' placeholder="First Name" maxlength="50" />
+                    <input type='text' name='lname' class="inputs" id='lname' placeholder="Last Name" maxlength="50" /> <br>
+                    <input type='email' name='email' class="inputs" id='mail' placeholder="Your Email" maxlength="100" />
+                    
+                    <select class="inputs" name="jobs">
+                        <option value="sports">Sports</option>
+                        <option value="finance">Finance</option>
+                        <option value="politics">Politics</option>
+                        <option value="fashion">Fashion</option>
+                    </select>
+                    <br>
+                    <input type='submit' class="btn" name='submit' value='Submit'>
+                </form>
+            </center>
+        </div>
+    </section>
+
+
+    <footer class="foot">
+        <p>© World Post News Inc 2019, All Rights Reserved. </p>
+    </footer>
+
+    <script>
+        alert('Welcome to the careers page here you can find the latest jobs!')
+    </script>
+
+        <script>
+            function validateForm() {
+                var x = document.forms["myForm4"]["fname"]["lname"]["email"].value;
+                if (x == "") {
+                    alert("Please don't leave the first any field blank.");
+                    return false;
+                }
+            }
+        </script>
+</body>
+
+</html>

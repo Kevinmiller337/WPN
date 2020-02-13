@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archives> 
+
+    <wpn-newspaper>
+        <name>Issue One</name>
+        <issue>#001</issue>
+        <date>2019-05-05</date>
+        <articles>3</articles>
+    </wpn-newspaper>
+
+    <wpn-newspaper>
+        <name>Issue Two</name>
+        <issue>#002</issue>
+        <date>2019-06-05</date>
+        <articles>5</articles>
+    </wpn-newspaper>
+
+    <wpn-newspaper>
+        <name>Issue Three</name>
+        <issue>#003</issue>
+        <date>2019-07-05</date>
+        <articles>4</articles>
+    </wpn-newspaper>
+
+    <wpn-newspaper>
+        <name>Issue Four</name>
+        <issue>#004</issue>
+        <date>2019-08-05</date>
+        <articles>3</articles>
+    </wpn-newspaper>
+
+    <wpn-newspaper>
+        <name>Issue Five</name>
+        <issue>#005</issue>
+        <date>2019-09-05</date>
+        <articles>6</articles>
+    </wpn-newspaper>
+
+    <wpn-newspaper>
+        <name>Issue Six</name>
+        <issue>#006</issue>
+        <date>2019-10-05</date>
+        <articles>4</articles>
+    </wpn-newspaper>
+
+    <wpn-newspaper>
+        <name>Issue Seven</name>
+        <issue>#007</issue>
+        <date>2019-11-05</date>
+        <articles>3</articles>
+    </wpn-newspaper>
+
+    <wpn-newspaper>
+        <name>Issue Eight</name>
+        <issue>#008</issue>
+        <date>2019-12-05</date>
+        <articles>6</articles>
+    </wpn-newspaper>
+
+    <wpn-newspaper>
+        <name>Issue Nine</name>
+        <issue>#009</issue>
+        <date>2020-01-05</date>
+        <articles>5</articles>
+    </wpn-newspaper>
+
+</archives>

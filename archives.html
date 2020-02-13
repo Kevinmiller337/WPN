@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WPN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/globe.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <nav class="top-nav colored">
+            <img class="nav-brand" src="images/wpn.png" alt="brand">
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a class="active" href="archives.html">Archives</a></li>
+                <li><a href="subscribe.html">Subcription</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <header class="top-container colored">
+            <img class="head-img" src="images/travel.png" alt="airplane-img">
+            <h1 class="first">World Post News</h1>
+        </header>
+
+    </section>
+
+    <section>
+        <div class="arcdiv">
+            <center>
+                <h1>WPN Archives</h1>
+                <p class="plan">Sign up for the latest archive updates.</p>
+                <form class="form2" action="handle_form.php" id="myForm3" name="myForm3" onsubmit="return validateForm2()"
+                    method="post" form>
+            
+                    <input type='text' name='fname' class="inputs" id='fname' placeholder="First Name" maxlength="50" />
+                    <input type='text' name='lname' class="inputs" id='lname' placeholder="Last Name" maxlength="50" />
+                    <input type='email' name='email' class="inputs" id='mail' placeholder="Your Email" maxlength="100" />
+
+                    <input type='submit' class="btn4" name='submit' value='Submit'>
+                </form>
+            </center>
+        </div>
+
+        <div class="arcdiv">
+            <h5>Archive Search</h5>
+            <p class="arctext">Browse our newspaper archives by pressing the button: </p>
+            
+            <button class="btn3" type="button" onload="loadXMLDoc()">Archives</button>
+            
+            <table id="table"></table>
+        </div>
+    </section>
+
+
+    <footer class="foot">
+        <p>© World Post News Inc 2019, All Rights Reserved. </p>
+    </footer>
+
+
+    <script>
+        function loadXMLDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "archives.xml", true);
+            xhttp.send();
+        }
+
+        function myFunction(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table = "<tr><th>Issue</th><th>Date</th><th>Articles</th></tr>";
+            var x = xmlDoc.getElementsByTagName("CD");
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("ISSUE")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("DATE")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+                     x[i].getElementsByTagName("ARTICLE")[0].childNodes[0].nodeValue +
+                    "</td></tr>"
+            }
+            document.getElementById("table").innerHTML = table;
+        }
+    </script>
+
+        <script>
+            function validateForm() {
+                var x = document.forms["myForm3"]["fname"]["lname"]["email"].value;
+                if (x == "") {
+                    alert("Please don't leave the first any field blank.");
+                    return false;
+                }
+            }
+        </script>
+</body>
+
+</html>

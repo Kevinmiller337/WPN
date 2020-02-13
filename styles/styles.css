@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: black;
+}
+
+h2, h3, h4, h5 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+p {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Images */
+.div-img {
+    height: 75px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Navigation */
+
+.nav-brand {
+    height: 40px;
+    padding: 3px;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+li {
+    float: right;
+
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/* Header */
+
+
+
+.colored {
+    background-color: #00d2d3;
+}
+
+.head-img {
+    margin: 75px;
+    padding-left: 75px;
+    height: 350px;
+}
+
+.first {
+    float: right;
+    margin-top: 200px;
+    margin-right: 350px;
+    font-style: italic;
+}
+
+/* Divs */ 
+
+.div1  {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fab1a0;
+}
+
+.trend-head {
+    font-weight: bold;
+}
+
+.trend {
+    color: red;
+}
+
+.div8 {
+    background-color: #25baba;
+}
+
+.subdiv1 {
+    background-color: #9c88ff;
+}
+
+.subdiv2 {
+    margin: 25px;
+}
+
+.subdiv4 {
+    background-color: #ff9f43;
+}
+
+
+/* Forms */
+
+.inputs {
+    padding: 8px;
+    margin: 10px;
+}
+
+.signup {
+    margin: 0px;
+}
+
+
+/* Buttons */
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.btn2 {
+    background-color: #eb4d4b;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn3 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn4 {
+    background-color: #2e86de;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+/* News Paper Articles */
+
+.newspaper {
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+}
+
+.newspaper1 {
+    column-count: 2;
+}
+
+.newspaper2 {
+    column-count: 3;
+}
+
+.newspaper3 {
+    column-count: 3;
+}
+
+.newspaper4 {
+    column-count: 2;
+}
+
+.newspaper5 {
+    column-count: 3;
+}
+
+/* Subscription Page */
+
+.medal-img {
+    height: 125px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.subplan {
+    text-align: center;
+    margin: 20px;
+}
+
+.description {
+    text-align: center;
+    margin: 10px;
+}
+
+.cost {
+    text-align: center;
+    margin: 15px;
+}
+
+
+/* Archives Page */
+
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+
+.arctext {
+    text-align: center;
+}
+
+.arcdiv {
+    margin: 25px;
+}
+
+/* Careers Page */
+
+.c-txt {
+    text-align: center;
+}
+
+
+/* About Page */
+
+.about-img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.about-info {
+    text-align: center;
+}
+
+.aboutdiv {
+    margin: 50px;
+}
+
+/* Contact */
+
+.contact-txt {
+    text-align: center;
+}
+
+.change {
+    color: #a9a9a9;
+}
+
+.contact-img {
+    height: 75px;
+    display: block;
+    margin: auto;
+}
+
+.contact-div {
+    margin: 25px;
+}
+
+/* Footer */
+.foot {
+    background-color: #00d2d3;
+    height: 100px;
+    text-align: center;
+    padding: 8px;
+}
+
+

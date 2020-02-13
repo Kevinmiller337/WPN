@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WPN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/globe.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <nav class="top-nav colored">
+            <img class="nav-brand" src="images/wpn.png" alt="brand">
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="archives.html">Archives</a></li>
+                <li><a class="active" href="subscribe.html">Subcription</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <header class="top-container colored">
+            <img class="head-img" src="images/travel.png" alt="airplane-img">
+            <h1 class="first">World Post News</h1>
+        </header>
+
+    </section>
+
+   <section>
+    <div class="subdiv2">
+        <h2 class="subplan">WPN Subscription Plans</h2>
+        <p class="description">We have several options subscription plan options. </p>
+        <p class="description"> Take advantage of our offers today!</p>
+            <form action="#myForm2">
+                <input type="submit" class="btn2" value="Subscribe" />
+            </form>
+       </div>
+
+       <div class="subdiv1">
+            <img class="medal-img" src="images/third.png" alt="gold-medal-img">
+            <h4>Bronze Plan</h4>
+            <p class="description">This is our standard package. </p>
+            <p class="description"> Members in this package will receive one newspaper per month for six months.</p>
+            <p class="cost">Cost $9.99 </p>
+       </div>
+
+        <div class="subdiv2">
+            <img class="medal-img" src="images/second.png" alt="silver-medal-image">
+            <h4>Silver Plan</h4>
+            <p class="description">This is our premium package. </p>
+            <p class="description"> Members in this package will receive one newspaper per month for nine months.</p>
+            <p class="cost">Cost $19.99 </p>
+        </div>
+
+        <div class="subdiv4">
+            <img class="medal-img"  src="images/first.png" alt="bonze-medal-image">
+            <h4>Gold Plan</h4>
+            <p class="description">This is our elite package.</p>
+            <p class="description"> Members in this package will receive one newspaper per month for 12 months. Members will also have access to the news archives.</p>
+            <p class="cost">Cost $29.99 </p> 
+        </div>   
+   </section>
+
+<section>
+    <div class="subdiv5">
+        <center>
+            <h5>Subscription Form</h5>
+            <p class="plan">Choose your plan!</p>
+            <form class="form2" action="handle_form.php" id="myForm2" name="myForm2" onsubmit="return validateForm2()" method="post"
+                form>
+
+                <input type='text' name='fname' class="inputs" id='fname' placeholder="First Name" maxlength="50" />
+                <br>
+                <input type='text' name='lname' class="inputs" id='lname' placeholder="Last Name" maxlength="50" /> <br>
+                <input type='email' name='email' class="inputs" id='mail' placeholder="Your Email" maxlength="100" />
+                <br>
+                <input type="radio" name="gold" value="gold">Gold 
+                <input type="radio" name="silver" value="silver">Silver 
+                <input type="radio" name="bronze" value="bronze">Bronze <br>
+
+                <input type='submit' class="btn" name='submit' value='Subscribe'>
+            </form>
+        </center>
+    </div>
+</section>
+
+    <footer class="foot">
+        <p>© World Post News Inc 2019, All Rights Reserved. </p>
+    </footer>
+
+    <script>
+        document.querySelector("h2").style.color = "#a9a9a9";
+    </script>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm2"]["fname"]["lname"]["email"].value;
+            if (x == "") {
+                alert("Please don't leave the first any field blank.");
+                return false;
+            }
+        }
+    </script>   
+
+
+</body>
+
+</html>

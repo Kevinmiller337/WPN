@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/globe.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body onload="myTitle()">
+    <section>
+        <nav class="top-nav colored">
+            <img class="nav-brand" src="images/wpn.png" alt="brand">
+            <ul>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="archives.html">Archives</a></li>
+                <li><a href="subscribe.html">Subcription</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <header class="top-container colored">
+            <img class="head-img" src="images/travel.png" alt="airplane-img">
+            <h1 class="first">World Post News</h1>
+        </header>
+
+    </section>
+
+    <section>
+        <div class="contact-div">
+            <h4 id="id1"></h4>
+            <p class="contact-txt">WPN prides itself on being accessible to the public. If you would like to contact us there are several ways to do so.</p>
+        </div>
+
+        <div class="contact-div">
+            <img class="contact-img" src="images/email.png" alt="mail-img">
+            <h5>By Mail</h5>
+            <p class="contact-txt">211 Montgrew Lane</p>
+            <p class="contact-txt">Chicago, Illinois 60622</p>
+        </div>
+
+        <div class="contact-div">
+            <img class="contact-img" src="images/call.png" alt="phone-img">
+            <h5>By Phone</h5>
+            <p class="contact-txt">(773)436-3974</p>
+        </div>
+
+        <div class="contact-div">
+            <img class="contact-img" src="images/mail.png" alt="at-symbol">
+            <center>
+                <h5>By Message</h5>
+                <form class="form5" action="handle_form.php" name="myForm5" onsubmit="return validateForm()" method="post" form>
+            
+                    <input type='text' name='fname' class="inputs" id='fname' placeholder="First Name" maxlength="50" /> 
+                    <input type='text' name='lname' class="inputs" id='lname' placeholder="Last Name" maxlength="50" /> 
+                    <input type='email' name='email' class="inputs" id='mail' placeholder="Your Email" maxlength="100" /> <br>
+                    <textarea rows="4" cols="50" name="comment" placeholder="Your Message:" form="usrform"></textarea> <br>
+                    <input type='submit' class="btn" name='submit' value='Submit'>
+                </form>
+            </center>
+        </div>
+
+    </section>
+
+    <footer class="foot">
+        <p>© World Post News Inc 2019, All Rights Reserved. </p>
+    </footer>
+
+        <script>
+            function myTitle() {
+                var homeTitle = document.title;
+                document.getElementById("id1").innerHTML = homeTitle;
+            }
+        </script>
+
+        <script>
+            function validateForm() {
+                var x = document.forms["myForm5"]["fname"]["lname"]["email"].value;
+                if (x == "") {
+                    alert("Please don't leave the first any field blank.");
+                    return false;
+                }
+            }
+        </script>
+
+</body>
+
+</html>
